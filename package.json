@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/index.js",
-    "client": "npm start --prefix client",
+    "start": "node backend/index.js",
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-prebuild": "npm install && cd frontend && npm install --force && cd ../ && cd backend && npm install",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix --force frontend && npm run build --force --prefix frontend"
   },
@@ -20,6 +22,7 @@
     "google-auth-library": "^8.1.1"
   },
   "devDependencies": {
+    "concurrently": "^7.2.1",
     "nodemon": "^2.0.19"
   }
 }
