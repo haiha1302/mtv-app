@@ -1,0 +1,57 @@
+.mainNav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.logoImg {
+    max-width: 130px;
+    padding: 10px 0 0 5px;
+}
+
+.navControls {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.btnNav {
+    padding: 5px 15px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btnNav:hover {
+    color: #FF66CC;
+}
+
+.userInfo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatarUser {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.nameUser {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+}
