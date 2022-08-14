@@ -28,7 +28,7 @@ const Login = () => {
     const config = { "Content-type": "application/json" };
 
     const res = await axios.post(
-      "/google-login",
+      "/api/google-login",
       { token: googleData.tokenId },
       config
     );
