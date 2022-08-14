@@ -27,7 +27,6 @@ const WatchTVSeries = () => {
     const params = useParams()
     const [detailsData, setDetailsData] = useState([])
     const [loading, setLoading] = useState(true)
-    console.log(params);
 
     useEffect(() => {
         const fetchDetailsTVSeries = async () => {
